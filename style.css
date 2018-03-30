@@ -1,0 +1,23 @@
+body{
+    background-color: #B22222;
+    font-family: "Bookman Old Style";
+    color: white;
+}
+
+h1{
+    color: white;
+    text-shadow: 5px 5px grey;
+    letter-spacing: 13px;
+}
+
+input{
+    border-radius: 5px;
+    color:#B22222;
+
+}
+
+button{
+    color: red;
+    font-family: "Bookman Old Style";
+
+}
