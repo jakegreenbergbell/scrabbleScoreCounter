@@ -1,30 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>sCRABBLEcOUNTER</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
-<body>
 
 <h1>Scrabble Score Counter</h1>
 
-<div id="realName1">
-Player 1: <input type="text" id="input1" class="form-inline input" placeholder="i.e. Jake">
-<button onclick="name('1')">Enter</button>
+<div id="setup">
+
+<div id="realName1" class="input">
+Player 1: <input type="text" id="player1" class="form-inline input" placeholder="i.e. Jake"><br>
 </div>
 
-<p></p>
-Player 2: <input type="text" id="name2" class="form-inline input" placeholder="i.e. Emma">
-<button>Enter</button>
-<p></p>
-Player 3: <input type="text" id="name3" class="form-inline input" placeholder="i.e. Jim">
-<button>Enter</button>
-<p></p>
-Player 4: <input type="text" id="name4" class="form-inline input" placeholder="i.e. Judith">
-<button>Enter</button>
+<div id="realName2" class="input">
+Player 2: <input type="text" id="player2" class="form-inline input" placeholder="i.e. Emma"><br>
+</div>
+
+<div id="realName3" class="input">
+Player 3: <input type="text" id="player3" class="form-inline input removable" placeholder="i.e. Jim">
+<button class="remove">Remove</button><br>
+</div>
+
+<div id="realName4" class="input">
+Player 4: <input type="text" id="player4" class="form-inline input removable" placeholder="i.e. Judith">
+<button class="remove">Remove</button><br>
+</div><br>
+
+<button id="enterNames">Enter Players</button></div>
+
+<div id="gameScore">
+    Player: <select class="names" id="addName">
+    <option>Player</option>
+    </select>
+
+<select class="names" id="numberOfLetters" onchange="letterChange()">
+    <option value="0">Number of letters</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+
+</select>
+    <div id="addWord">
+    </div>
+
+</div>
 
 </body>
 </html>

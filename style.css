@@ -2,6 +2,17 @@ body{
     background-color: #B22222;
     font-family: "Bookman Old Style";
     color: white;
+    text-align: center;
+}
+
+.input{
+    margin-bottom: 30px;
+    height: 30px;
+    font-size: 25px;
+}
+
+#realName1, #realName2{
+    margin-right: 64px;
 }
 
 h1{
@@ -13,11 +24,38 @@ h1{
 input{
     border-radius: 5px;
     color:#B22222;
-
 }
 
 button{
     color: red;
     font-family: "Bookman Old Style";
 
+}
+
+#gameScore{
+    display: none;
+}
+
+.names{
+    height: 10vh;
+    width: 8vw;
+    font-size: 30px;
+    color:#B22222;
+    margin-bottom: 30px;
+}
+
+.letter{
+    height: 55px;
+    width: 55px;
+    margin-right: 10px;
+    font-size: 42px;
+    cursor: pointer;
+}
+
+#numberOfLetters{
+    width: 19vw;
+}
+
+#setup{
+    font-size: 30px;
 }
